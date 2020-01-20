@@ -1,0 +1,19 @@
+bookprice=24.95
+discount= .40
+shippingprice1=3.0
+shippingprice= .75
+units=60
+
+bookamount=(bookprice-discount)*units
+shippingamount=(shippingprice*(units-1))+shippingprice1
+res=bookamount+shippingamount
+
+
+print "book price", bookamount
+print "total shipping", shippingamount
+print "total",res
+
+
+
+
+
