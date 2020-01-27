@@ -1,0 +1,7 @@
+def sobs(st):
+	if len(st) < 2:
+		return ' '
+	else:
+		print(st[0:2]+st[-2:])
+st="helloworld"
+sobs(st)
