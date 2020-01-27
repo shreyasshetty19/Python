@@ -1,0 +1,11 @@
+inputString = input('Enter your string:')
+indexOfnot = 0
+indexOfpoor = 0
+string = ''
+if inputString.find('not'):
+	indexOfnot = inputString.find('not')
+	if inputString.find('poor'):
+		indexOfpoor = inputString.find('poor')
+		if inputString.find('bad'):
+			string = inputString[0:indexOfnot] + 'good' + inputString[(indexOfpoor+4):]
+print(string)
