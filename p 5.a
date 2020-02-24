@@ -1,0 +1,9 @@
+m =input("Enter m : ")
+for i in range(m):
+	print("n"*(i+1)),
+	if(i+1 != m):
+		print("+"),
+
+OUTPUT:
+Enter m : 5
+n + nn + nnn + nnnn + nnnnn
