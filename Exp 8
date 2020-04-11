@@ -1,0 +1,29 @@
+# super() can  be used to initialize the constructor of the Parent class.
+class forSuper:
+    def __init__(self, Name, Age):
+        self.Name = Name
+        self.Age = Age
+
+    def randomMethod(self):
+        print("This method will be overridden to show polymorphism")
+
+
+class subClass(forSuper):
+    def __init__(self, Name, Age, Info):
+        # We can call the constructor of the parent class using super and passing the required arguments.
+        super().__init__(Name, Age)
+        self.Info = Info
+
+    def randomMethod(self):
+        print("It overrides the randomMethod placed in parent class. So when a object of child class calls this "
+              "function this output will be printed. ")
+
+
+student = subClass("Shreyas", 21, "I like football and programming.")
+student.randomMethod()
+print(student.Name)
+
+
+Output:-
+It overrides the randomMethod placed in parent class. So when a object of child class calls this function this output will be printed. 
+Shreyas
