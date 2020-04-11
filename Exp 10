@@ -1,0 +1,14 @@
+fileHandler = open("file.txt", "w")   # Since file.txt didn't existed it created a file with the given name.
+fileHandler.write("Hello World!")     # It completely wipes of the content of the file and writes the given information.
+
+fileHandler1 = open("file1.txt", "a")  # It will open the file in append mode and when writeen the existing data isn't
+                                       # lost
+fileHandler1.write("\nRoy")
+
+
+fileHandler3 = open("file3.txt", "r+")  # It is a mode for both reading and writing/appending.
+fileHandler3.write("I opened this file in read/write mode.")
+print(fileHandler3.read())
+
+Output:-
+Process finished with exit code 0
