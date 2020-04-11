@@ -1,0 +1,22 @@
+# We can do error handling using try and except
+try:
+    file = open("Shreyas.txt")  # I don't have any such file, hence it will throw error.
+
+except Exception as exception:
+    print("The exception is ", exception)
+
+# We can write different except block for different types of error.
+except IOError as e:
+    print("IOError occurred,", e)
+
+# This block will run if any of the except block doesn't runs.
+else:
+    print("This block will run if except block doesn't runs.")
+
+# finally block contains code that would run whether try or except block runs or not
+finally:
+    print("This statement will be printed even if try and except block runs or not.")
+    
+Output :-
+The exception is  [Errno 2] No such file or directory: 'Jintal.txt'
+This statement will be printed even if try and except block runs or not.
